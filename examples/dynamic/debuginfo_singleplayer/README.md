@@ -1,4 +1,4 @@
-# Loader
+# Single Player "DebugInfo" prints
 
 This contains code to load an unused feature to print some debugging information on single player gameplay, if the [debug flag "DebugInfo" is enabled from the game's debug menu](https://tcrf.net/MiniCopter:_Adventure_Flight/Debugging_Functions).
 
