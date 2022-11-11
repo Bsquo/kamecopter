@@ -1,8 +1,7 @@
 #ifndef POSSESSION_ITEM_LIST_H
 #define POSSESSION_ITEM_LIST_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // TODO: Properly fill this class
 class CPossessionItemList {

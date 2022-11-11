@@ -4,8 +4,7 @@
 #include "../include/game/utils/VListBase.h"
 #include "../include/game/math/VVector.h"
 #include "../include/game/actor/VActor.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CAirBullet: public CVListBase {
     public:

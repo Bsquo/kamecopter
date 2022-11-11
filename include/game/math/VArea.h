@@ -2,14 +2,12 @@
 #define VAREA_H
 
 #include "../include/game/math/VVector.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVArea {
-    private:
+    public:
         f32 mAreaVertex[3][2];      // A 2D triangle
 
-    public:
         CVArea();
         CVArea(f32, f32, f32, f32, f32, f32);
         void Init();

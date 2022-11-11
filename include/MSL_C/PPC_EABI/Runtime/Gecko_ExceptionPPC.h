@@ -1,8 +1,7 @@
 #ifndef GECKO_EXCEPTIONPPC_H
 #define GECKO_EXCEPTIONPPC_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // extern "C" is used to avoid the compiler from mangling the name in C++ code.
 // More info:

@@ -2,8 +2,7 @@
 #define VLIST_H
 
 #include "../include/game/utils/VListBase.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVListBase;	// Forward declaration
 

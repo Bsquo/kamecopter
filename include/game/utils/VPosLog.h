@@ -3,7 +3,7 @@
 
 #include "../include/game/math/VVector.h"
 #include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include "../include/<kamek.h>
 
 class CPosLog {
     private:

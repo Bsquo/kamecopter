@@ -1,8 +1,7 @@
 #ifndef VFLAG_H
 #define VFLAG_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVFlag {
     private:

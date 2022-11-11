@@ -3,7 +3,7 @@
 
 #include "../include/game/utils/VList.h"
 #include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include "../include/<kamek.h>
 
 class CResListMgr {
     protected:

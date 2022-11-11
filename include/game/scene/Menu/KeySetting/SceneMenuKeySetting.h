@@ -2,8 +2,7 @@
 #define SCENE_MENU_KEY_SETTING_H
 
 #include "../include/game/scene/Menu/SceneMenuBase.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // Sound settings scene
 class CSceneMenuKeySetting: public CSceneMenuBase {
@@ -12,13 +11,13 @@ class CSceneMenuKeySetting: public CSceneMenuBase {
 
 	public:
 		CSceneMenuKeySetting();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuKeySetting();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuKeySetting();
 };
 
 #endif // SCENE_MENU_KEY_SETTING_H

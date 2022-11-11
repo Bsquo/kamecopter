@@ -1,11 +1,10 @@
 #ifndef LIFT_CUP_H
 #define LIFT_CUP_H
 
-#include "../k_stdlib/kamek.h"
 #include "../include/game/utils/VFilePath.h"
 #include "../include/game/actor/ActScn/ActMovable.h"
 #include "../include/game/gfx/VModel.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CLiftCup {
     public:
@@ -15,7 +14,7 @@ class CLiftCup {
         CActMovable* pActor;                // Actor being lifted by suction cup
         CVVector mActorPos;                 // Position of actor being lifted
         f32 lift_dist;                      // 吸着距離(m) (Distance between suction cup and actor in meters)
-        u32 mStrongDropBlinkingTime;        // Time in frames of the actor blinking when it's dropped to the floor strongly
+        s32 mStrongDropBlinkingTime;        // Time in frames of the actor blinking when it's dropped to the floor strongly
 
         CLiftCup();
         bool Init(CVFilePath, CVActor*);

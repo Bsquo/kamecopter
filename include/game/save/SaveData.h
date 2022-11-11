@@ -3,12 +3,11 @@
 
 #include "../include/game/save/UserConfig.h"
 #include "../include/game/save/PossessionItemList.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CSaveData {
     private:
-        UNK32 mMagic;       // PCTW
+        UNK32 mMagic;                                   // PCTW
         UNK32 field_0x04;
         CUserConfig mUserConfig;
         UNK32 field_0x1C;

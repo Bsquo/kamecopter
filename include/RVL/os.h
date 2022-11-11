@@ -1,7 +1,6 @@
 #pragma once
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // https://wiibrew.org/wiki/Memory_map
 typedef s64 OSTime;
@@ -16,4 +15,6 @@ extern "C" {
     void OSSetPowerCallback(void*);
     OSTime OSGetTime();
     void OSReport(char*, ...);
+    void OSPanic(const char* filename, int line, const char* format, ...);
+    void OSInitFastCast();
 }

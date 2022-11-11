@@ -4,7 +4,7 @@
 #include "../include/game/pad/VPadData.h"
 #include "../include/game/utils/VFilePath.h"
 #include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include "../include/<kamek.h>
 
 class CVPadMgr {
     protected:

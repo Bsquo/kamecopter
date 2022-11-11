@@ -3,8 +3,7 @@
 
 #include "../include/game/scene/Menu/SceneMenuBase.h"
 #include "../include/game/PCopter_constants.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // Sound settings scene
 class CSceneMenuSoundSetting: public CSceneMenuBase {
@@ -15,13 +14,13 @@ class CSceneMenuSoundSetting: public CSceneMenuBase {
 
 	public:
 		CSceneMenuSoundSetting();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuSoundSetting();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuSoundSetting();
 };
 
 #endif // SCENE_MENU_SOUND_SETTING_H

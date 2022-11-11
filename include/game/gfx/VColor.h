@@ -1,8 +1,7 @@
 #ifndef VCOLOR_H
 #define VCOLOR_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVColor {
 	private:

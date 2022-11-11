@@ -4,8 +4,7 @@
 #ifndef _RVL_DB_H
 #define _RVL_DB_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 #define ExceptionHookDestination 0x80000048
 #define IsDebuggerPresent        0x80000040

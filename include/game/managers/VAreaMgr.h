@@ -4,7 +4,7 @@
 #include "../include/game/math/VArea.h"
 #include "../include/game/math/VVector.h"
 #include "../include/game/utils/VList.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVAreaMgr {
     protected:

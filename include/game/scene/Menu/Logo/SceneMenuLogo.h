@@ -4,8 +4,7 @@
 #include "../include/game/scene/Menu/SceneMenuBase.h"
 #include "../include/nw4r/lyt/lyt_arcResourceAccessor.h"
 #include "../include/nw4r/lyt/lyt_layout.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // Arc System Works logo scene
 class CSceneMenuLogo: public CSceneMenuBase {
@@ -22,13 +21,13 @@ class CSceneMenuLogo: public CSceneMenuBase {
         s32 field_0xA0;
 
 		CSceneMenuLogo();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuLogo();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuLogo();
 };
 
 #endif // SCENE_MENU_LOGO_H

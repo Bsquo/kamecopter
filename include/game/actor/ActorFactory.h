@@ -3,8 +3,7 @@
 
 #include "../include/game/actor/VActor.h"
 #include "../include/game/utils/VFilePath.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CActorFactory {
     public:

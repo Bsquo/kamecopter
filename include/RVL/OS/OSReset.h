@@ -1,8 +1,7 @@
 #ifndef RVL_OS_H
 #define RVL_OS_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 #ifdef __cplusplus
 extern "C" {

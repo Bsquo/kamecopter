@@ -2,7 +2,7 @@
 #define VSOUNDMGR_H
 
 #include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include "../include/<kamek.h>
 
 class CVSoundMgr {
     protected:

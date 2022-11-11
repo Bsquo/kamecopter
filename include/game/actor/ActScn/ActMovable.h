@@ -2,8 +2,7 @@
 #define ACT_MOVABLE_H
 
 #include "../include/game/actor/ActScn/ActScnBase.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CActMovable: public CActScnBase {
     public:

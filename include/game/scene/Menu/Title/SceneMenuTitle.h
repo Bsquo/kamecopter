@@ -4,8 +4,7 @@
 #include "../include/game/scene/Menu/SceneMenuBase.h"
 #include "../include/game/scene/Menu/DataAccess/SceneMenuDataAccess.h"
 #include "../include/nw4r/lyt/lyt_layout.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 enum eTitleMenu {
 	CHECK_WIIMOTE_BATTERY,
@@ -40,13 +39,13 @@ class CSceneMenuTitle: public CSceneMenuBase {
 
 	public:
 		CSceneMenuTitle();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuTitle();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuTitle();
 };
 
 #endif // SCENE_MENU_TITLE_H

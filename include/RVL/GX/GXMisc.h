@@ -1,8 +1,7 @@
 #ifndef GXMISC_H
 #define GXMISC_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 #ifdef __cplusplus
 extern "C" {

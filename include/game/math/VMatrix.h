@@ -4,8 +4,7 @@
 #include "../include/game/math/VAxis.h"
 #include "../include/game/math/VVector.h"
 #include "../include/nw4r/math/math_types.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVAxis;   // Forward declaration
 
@@ -17,12 +16,12 @@ class CVMatrix {
         CVMatrix();
         CVMatrix(const CVMatrix&);
 
-        void operator=(const CVMatrix&);
-        //void operator=(const nw4r::math::MTX34&);     // Temporary commented out.
+        const CVMatrix& operator=(const CVMatrix&);
+        //const CVMatrix& operator=(const nw4r::math::MTX34&);     // Temporarily commented out.
         CVAxis operator*(const CVAxis&);
         CVVector operator*(const CVVector&);
         CVMatrix operator*(const CVMatrix&);
-        CVMatrix operator*=(const CVMatrix&);
+        const CVMatrix& operator*=(const CVMatrix&);
         operator CVAxis() const;
         operator nw4r::math::MTX34() const;
 

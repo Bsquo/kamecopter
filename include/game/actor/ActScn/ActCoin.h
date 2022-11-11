@@ -2,8 +2,7 @@
 #define ACT_COIN_H
 
 #include "../include/game/actor/ActScn/ActScnBase.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CActCoin: public CActScnBase {
     public:
@@ -11,7 +10,8 @@ class CActCoin: public CActScnBase {
         f32 field_0x3E4;
 
         CActCoin();
-        virtual ~CActCoin();
+        ~CActCoin();
+        bool CheckGet(CVActor*);
 };
 
 #endif // ACT_COIN_H

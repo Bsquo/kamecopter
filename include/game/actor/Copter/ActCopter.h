@@ -4,6 +4,7 @@
 #include "../include/game/actor/VActor.h"
 #include "../include/game/actor/Copter/parts/AirCannon.h"
 #include "../include/game/actor/Copter/parts/LiftCup.h"
+#include "../include/game/actor/Copter/VPosLog.h"
 
 class CActCopter: public CVActor {
     public:
@@ -42,22 +43,29 @@ class CActCopter: public CVActor {
         s32 durability;
         CAirCannon mAirCannon;
         CLiftCup mLiftCup;
-        s32 item;   // Item equipped. 0 = NONE, 1 = Air Cannon, 2 = Lift Cup
+        s32 item;               // Item equipped. 0 = NONE, 1 = Air Cannon, 2 = Lift Cup
         f32 field_0x4C8;
-        UNK32 field_0x4CC;
+        f32 field_0x4CC;
         UNK32 field_0x4D0;
         CVVector field_0x4D4;
         CVVector field_0x4E0;
         UNK32 field_0x4EC;
-        CVVector resNodePos_startPos;
-        CVVector resNodeRoll_startPos;
-        f32 field_0x508;
-        f32 field_0x50C;
-        f32 field_0x510;
-        UNK8 field_0x514[476];
+        CVVector mResNodePos_startPos;
+        CVVector mResNodeRoll_startPos;
+        CPosLog mPosLog;
 
         CActCopter();
-        virtual ~CActCopter();
+        ~CActCopter();
+        const CVAxis& GetAxis();
+        const CVMatrix& GetMtx();
+        bool Move(f32);
+        void BindModel(CVFilePath);
+        void InitParam();
+        void InitPos(CVVector, CVVector);
+        void Recovery();
+        void Destroyed(CVVector, CVFlag*); 
+        void CalcCollEffect(f32, f32, f32, f32);
+        void UpdateArea();
 };  // Size = 0x6EC
 
 #endif // ACTCOPTER_H

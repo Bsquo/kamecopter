@@ -1,8 +1,7 @@
 #ifndef NW4R_UT_RECT_H
 #define NW4R_UT_RECT_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 namespace nw4r {
     namespace ut {

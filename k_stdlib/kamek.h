@@ -36,6 +36,18 @@ typedef volatile f32 vf32;
 
 typedef unsigned long size_t;
 
+#define TRUE 1
+#define FALSE 0
+
+#define nullptr 0
+
+// Unknwon types
+typedef long long           UNK64;
+typedef int                 UNK32;
+typedef short               UNK16;
+typedef char                UNK8;
+typedef void*               UNK_PTR;
+
 #include "base/hooks.h"
 #include "base/c_stdlib.h"
 #include "base/rvl_sdk.h"

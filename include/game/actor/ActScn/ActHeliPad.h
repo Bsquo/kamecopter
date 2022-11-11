@@ -2,8 +2,7 @@
 #define ACT_HELIPAD_H
 
 #include "../include/game/actor/ActScn/ActScnBase.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CActHeliPad: public CActScnBase {
     public:
@@ -12,7 +11,7 @@ class CActHeliPad: public CActScnBase {
         f32 field_0x3E8;
 
         CActHeliPad();
-        virtual ~CActHeliPad();
+        ~CActHeliPad();
 };
 
 #endif // ACT_HELIPAD_H

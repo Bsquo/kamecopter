@@ -5,8 +5,7 @@
 #include "../include/game/utils/VFlag.h"
 #include "../include/game/math/VVector.h"
 #include "../include/game/actor/VActor.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVCamera: public CVListBase {
     public:

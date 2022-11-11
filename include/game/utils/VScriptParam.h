@@ -2,8 +2,7 @@
 #define VSCRIPTPARAM_H
 
 #include "../include/game/utils/VListBase.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVScriptParam: public CVListBase {
     public:

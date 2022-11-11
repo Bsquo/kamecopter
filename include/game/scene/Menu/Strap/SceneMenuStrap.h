@@ -2,8 +2,7 @@
 #define SCENE_MENU_STRAP_H
 
 #include "../include/game/scene/VScene.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // Strap scene
 class CSceneMenuStrap: public CVScene {
@@ -12,13 +11,13 @@ class CSceneMenuStrap: public CVScene {
 		
     public:
         CSceneMenuStrap();
-        virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuStrap();
+        bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuStrap();
 };
 
 #endif // SCENE_MENU_STRAP_H

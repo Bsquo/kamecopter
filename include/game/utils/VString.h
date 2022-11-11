@@ -2,8 +2,7 @@
 #define VSTRING_H
 
 #include "../include/MSL_C/PPC_EABI/Runtime/__mem.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVString {
     public:

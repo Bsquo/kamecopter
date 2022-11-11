@@ -4,8 +4,7 @@
 #include "../include/game/actor/ActScn/ActMovable.h"
 #include "../include/game/utils/VString.h"
 #include "../include/game/math/VVector.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CActBalloon: public CActMovable {
     public:
@@ -18,7 +17,7 @@ class CActBalloon: public CActMovable {
         f32 balloon_r;                  // 風船の判定半径（m） (Balloon decision radius (m))
 
         CActBalloon();
-        virtual ~CActBalloon();
+        ~CActBalloon();
 };
 
 #endif // ACT_BALLOON_H

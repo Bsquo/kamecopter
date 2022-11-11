@@ -2,8 +2,7 @@
 #define USERCONFIG_H
 
 #include "../include/game/PCopter_constants.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CUserConfig {
     private:

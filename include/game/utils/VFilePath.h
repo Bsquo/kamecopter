@@ -1,8 +1,7 @@
 #ifndef VFILEPATH_H
 #define VFILEPATH_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVFilePath {
     private:
@@ -11,9 +10,9 @@ class CVFilePath {
     public:
         CVFilePath();
         CVFilePath(char*);
-        char* operator=(const CVFilePath&);
-        char* operator=(const char*);
-        char* operator+=(const char*);
+        const char* operator=(const CVFilePath&);
+        const char* operator=(const char*);
+        const char* operator+=(const char*);
         operator const char* ();
         operator char* ();
         void Init();

@@ -1,8 +1,7 @@
 #ifndef GXFRAMEBUF_H
 #define GXFRAMEBUF_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 struct _GXRenderModeObj;
 

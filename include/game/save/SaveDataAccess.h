@@ -2,8 +2,7 @@
 #define SAVE_DATA_ACCESS_H
 
 #include "../include/game/save/SaveData.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CSaveDataAccess: public CSaveData {
     public:

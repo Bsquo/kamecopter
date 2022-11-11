@@ -6,8 +6,7 @@
 #include "../include/game/utils/VString.h"
 #include "../include/game/math/VVector.h"
 #include "../include/nw4r/g3d/g3d_scnobj.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // https://tcrf.net/Notes:MiniCopter:_Adventure_Flight#Gameplay_State_List
 enum eGameplayState {
@@ -36,13 +35,13 @@ enum eGameplayState {
 class CSceneGame: public CVScene {
 	public:
 		CActCopter* pHelicopter;
-		UNK32 field_0x30;
-		UNK32 field_0x34;
+		CActCopter* pSecondHelicopter;
+		CVActor* field_0x34;
 		UNK32 field_0x38;
 		UNK32 field_0x3C;
 		nw4r::g3d::ScnGroup* pScnGroup;
 		UNK32 field_0x44;
-		CVString mBGMFilename;	// Filename of the current background music file.
+		CVString mBGMFilename;					// Filename of the current background music file.
 		f32 camera_0_dir[2];
 		f32 camera_0_dist;
 		f32 camera_0_var[2];
@@ -52,13 +51,13 @@ class CSceneGame: public CVScene {
 		UNK32 field_0x7C;
 		UNK32 field_0x80;
 		UNK32 field_0x84;
-		UNK32 field_0x88;
+		u32 mMissionFinishingTime;
 		UNK32 field_0x8C;
 		eGameplayState mGameplayState;
-		UNK32 field_0x94;
+		u32 mTimeInCurrentGameplayState;		// In frames
 		s32 ground_smoke;
 		f32 limit_height;
-		UNK32 field_0xA0;
+		f32 field_0xA0;
 		UNK32 field_0xA4;
 		UNK32 field_0xA8;
 		UNK32 field_0xAC;
@@ -78,6 +77,25 @@ class CSceneGame: public CVScene {
 		virtual void CalcLocalSystem();
 		virtual void EndLocal();
 		virtual ~CSceneGame();
+		virtual void SetupScenary();
+		virtual void CreateActors();
+		virtual void SetupSound();
+		virtual void CreateCameras();
+		virtual void CreateEffects();
+		virtual void CreateLayout();
+		virtual void UpdateGameLayout();
+		virtual void CheckPadError();
+		virtual void CalcCursor();
+		virtual void Restart();
+		void SetState(int);
+		//void RenderEtcProc(nw4r::g3d::ScnProc*, bool);
+		void SetButtonAnim(char*, char*, int);
+		void PauseSound(int);
+		void SetNumberString(u16*, u32);
+		void CreateScnGroup();
+		void LoadResources();
+		void SetupRenderActor(int, int);
+		void UpdateRenderFrame(int, int);
 };
 
 #endif // SCENE_GAME_H

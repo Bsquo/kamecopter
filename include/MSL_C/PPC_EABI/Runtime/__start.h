@@ -3,8 +3,7 @@
 // https://github.com/doldecomp/melee/blob/master/src/dolphin/os/init/__start.h
 
 #include "../include/RVL/db/db.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 #define PAD3_BUTTON_ADDR        0x800030E4
 #define OS_RESET_RESTART        0

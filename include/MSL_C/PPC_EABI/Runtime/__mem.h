@@ -1,8 +1,7 @@
 #ifndef MEM_H
 #define MEM_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // extern "C" is used to avoid the compiler from mangling the name in C++ code.
 // More info:

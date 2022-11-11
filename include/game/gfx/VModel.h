@@ -6,7 +6,7 @@
 #include "../include/game/utils/VFilePath.h"
 #include "../include/game/scene/VScene.h"
 #include "../include/game/math/VVector.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVModel: public CVListBase {
 	public:

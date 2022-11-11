@@ -3,9 +3,10 @@
 
 #include "../include/game/scene/VScene.h"
 #include "../include/nw4r/math/math_types.h"
+#include "../include/nw4r/lyt/lyt_layout.h"
 #include "../include/nw4r/lyt/lyt_animation.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include "../include/nw4r/lyt/lyt_arcResourceAccessor.h"
+#include <kamek.h>
 
 // State of fade in / out when entering / exiting menus
 typedef enum eFadeState {
@@ -27,12 +28,12 @@ class CSceneMenuBase: public CVScene {
 		s32 field_0x3C;
 		s32 field_0x40;
 		s32 field_0x44;
-		nw4r::lyt::AnimTransform* field_0x48;
+		nw4r::lyt::AnimTransform* pAnimTransform;
 		nw4r::math::VEC2 field_0x4C;
 		nw4r::math::VEC2 field_0x54;
-		s32 field_0x5C;
-		s32 field_0x60;
-		s32 field_0x64;
+		nw4r::lyt::Layout* pLayout;
+		void* CursorBuf;				// Buffer for the file /PCopter/Menu/Cursor.arc
+		nw4r::lyt::ArcResourceAccessor* pArcResourceAccessor;
 		s32 field_0x68;
 		s32 field_0x6C;
 		s32 field_0x70;

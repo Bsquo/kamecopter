@@ -2,20 +2,30 @@
 #define SCENE_GAME_MULTI_H
 
 #include "../include/game/scene/Game/SceneGame.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // Multiplayer gameplay scene
 class CSceneGameMulti: public CSceneGame {
-  public:
+    public:
 		CSceneGameMulti();
-    virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneGameMulti();
+        bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void CalcLocalSystem();
+		void EndLocal();
+		~CSceneGameMulti();
+		void SetupScenary();
+		void CreateActors();
+		void SetupSound();
+		void CreateCameras();
+		void CreateEffects();
+		void CreateLayout();
+		void UpdateGameLayout();
+		void CheckPadError();
+		void CalcCursor();
+		void Restart();
 };
 
 #endif // SCENE_GAME_MULTI_H

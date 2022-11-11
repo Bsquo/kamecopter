@@ -1,0 +1,56 @@
+# CApp
+GetInstance__4CAppFv=0x80011680
+GetSceneGame__4CAppFv=0x8001d010
+@LOCAL@GetInstance__4CAppFv@m_instance=0x805088c0
+@GUARD@GetInstance__4CAppFv@m_instance=0x8060ecea
+__vt__4CApp=0x801cb410
+
+
+# CVFlag
+Check__6CVFlagFUs=0x800267f4
+__vt__6CVFlag=0x801cb7a8
+
+
+# CVList
+GetSize__6CVListFv=0x80026a60
+
+
+# demo
+Report__4demoFiiPCce=0x80119298
+GetAvailableHeapRate__4demoFiPUl=0x8011c08c
+
+
+# CVAreaMgr
+GetInstance__9CVAreaMgrFv=0x80015a30
+@LOCAL@GetInstance__9CVAreaMgrFv@m_instance=0x804f1f78
+@GUARD@GetInstance__9CVAreaMgrFv@m_instance=0x8060ece2
+__vt__9CVAreaMgr=0x801ca600
+
+
+# CVActorMgr
+GetInstance__10CVActorMgrFv=0x80015974
+@LOCAL@GetInstance__10CVActorMgrFv@m_instance=0x805019dc
+@GUARD@GetInstance__10CVActorMgrFv@m_instance=0x8060ece4
+__vt__10CVActorMgr=0x801cb8a8
+
+
+# CSceneGame
+SetState__10CSceneGameFi=0x80015b0c
+
+
+# CVLayoutMgr
+GetInstance__11CVLayoutMgrFv=0x800158ac
+SetVisible__11CVLayoutMgrFPci=0x8002f268
+SetState__11CVLayoutMgrFPci=0x8002f348
+
+
+# CScenaryMgr
+GetInstance__11CScenaryMgrFv=0x80015910
+
+
+# CVScript
+GetParam__8CVScriptFPci=0x8002c428
+
+
+# Misc.
+__cvt_fp2unsigned=0x800b2f90

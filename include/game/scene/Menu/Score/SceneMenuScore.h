@@ -4,8 +4,7 @@
 #include "../include/game/scene/Menu/SceneMenuBase.h"
 #include "../include/nw4r/lyt/lyt_arcResourceAccessor.h"
 #include "../include/nw4r/lyt/lyt_layout.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // Unused Score scene
 class CSceneMenuScore: public CSceneMenuBase {
@@ -26,13 +25,13 @@ class CSceneMenuScore: public CSceneMenuBase {
 
 	public:
 		CSceneMenuScore();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuScore();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuScore();
 };
 
 #endif // SCENE_MENU_SCORE_H

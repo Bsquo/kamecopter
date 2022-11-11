@@ -2,8 +2,7 @@
 #define SCENE_MENU_CLASSIC_CHEAK_H
 
 #include "../include/game/scene/Menu/SceneMenuBase.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // "Disconnected Classic Controller" messaage after Strap scene
 class CSceneMenuClassicCheak: public CSceneMenuBase {
@@ -12,13 +11,13 @@ class CSceneMenuClassicCheak: public CSceneMenuBase {
 
 	public:
 		CSceneMenuClassicCheak();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuClassicCheak();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuClassicCheak();
 };
 
 #endif // SCENE_MENU_CLASSIC_CHEAK_H

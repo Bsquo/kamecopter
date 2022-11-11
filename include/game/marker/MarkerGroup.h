@@ -5,8 +5,7 @@
 #include "../include/game/utils/VList.h"
 #include "../include/game/utils/VFlag.h"
 #include "../include/game/math/VVector.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CMarkerGroup: public CVListBase {
     public:

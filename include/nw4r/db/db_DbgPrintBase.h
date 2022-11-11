@@ -2,8 +2,7 @@
 #define NW4R_DB_DBGPRINTBASE_H
 
 #include "../include/nw4r/ut/ut_Color.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 namespace nw4r {
     namespace db {

@@ -3,8 +3,7 @@
 
 #include "../include/game/utils/VList.h"
 #include "../include/game/utils/VScriptElement.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVScript {
     private:

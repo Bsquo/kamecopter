@@ -6,8 +6,7 @@
 #include "../include/game/math/VVector.h"
 #include "../include/game/actor/VActor.h"
 #include "../include/game/camera/VCamera.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVCameraMgr {
     protected:

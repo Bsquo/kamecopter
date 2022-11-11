@@ -3,8 +3,7 @@
 
 #include "../include/game/utils/VListBase.h"
 #include "../include/game/utils/VString.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVScriptString: public CVListBase {
     public:

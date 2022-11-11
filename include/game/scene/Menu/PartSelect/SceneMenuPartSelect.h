@@ -3,8 +3,7 @@
 
 #include "../include/game/scene/Menu/SceneMenuBase.h"
 #include "../include/game/scene/Menu/ItemList/SceneMenuItemList.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // Customize menu & Shop Buy / Sell menu
 class CSceneMenuPartSelect: public CSceneMenuBase {
@@ -17,13 +16,13 @@ class CSceneMenuPartSelect: public CSceneMenuBase {
 	public:
 		CSceneMenuPartSelect();
         void SetSelectCopter(int);
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuPartSelect();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuPartSelect();
 };
 
 #endif // SCENE_MENU_PART_SELECT_H

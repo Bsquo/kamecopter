@@ -5,13 +5,12 @@
 #include "../include/game/utils/VListBase.h"
 #include "../include/game/utils/VFlag.h"
 #include "../include/game/utils/VString.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CMarker: public CVListBase {
     public:
         CVFlag mFlags;
-        void* pActor;   // Actor the hand is pointing to
+        void* pActor;           // Actor the hand is pointing to
         CVVector mPos;
         CVString mEffectName;
 

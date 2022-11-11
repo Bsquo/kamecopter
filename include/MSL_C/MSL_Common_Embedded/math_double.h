@@ -1,8 +1,7 @@
 #ifndef MSL_C_COMMON_EMBEDDED_H
 #define MSL_C_COMMON_EMBEDDED_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // extern "C" is used to avoid the compiler from mangling the name in C++ code.
 // More info:

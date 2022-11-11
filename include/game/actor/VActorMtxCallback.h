@@ -2,16 +2,15 @@
 #define VACTORMTXCALLBACK_H
 
 #include "../include/nw4r/g3d/ICalcWorldCallback.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 class CVActorMtxCallback: public nw4r::g3d::ICalcWorldCallback {
     private:
         void* field_0x04;
     public:
-        virtual ~CVActorMtxCallback();
-        virtual void ExecCallbackA(/*NEEDS ARGUMENTS HERE*/);
-        virtual void ExecCallbackB(/*NEEDS ARGUMENTS HERE*/);
-        virtual void ExecCallbackC(/*NEEDS ARGUMENTS HERE*/);
+        ~CVActorMtxCallback();
+        void ExecCallbackA(/*NEEDS ARGUMENTS HERE*/);
+        void ExecCallbackB(/*NEEDS ARGUMENTS HERE*/);
+        void ExecCallbackC(/*NEEDS ARGUMENTS HERE*/);
 };
 
 

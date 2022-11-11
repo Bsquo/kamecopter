@@ -2,8 +2,7 @@
 #define VMATH_H
 
 #include "../include/game/math/VVector.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 namespace CVMath {
     f32 CalcLength(CVVector, CVVector);

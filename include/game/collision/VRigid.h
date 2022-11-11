@@ -6,7 +6,7 @@
 #include "../include/game/math/VMatrix.h"
 #include "../include/game/math/VVector.h"
 #include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include "../include/<kamek.h>
 
 class CVRigid: public CVListBase {
     public:

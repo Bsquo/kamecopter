@@ -4,8 +4,7 @@
 #include "../include/game/scene/Menu/SceneMenuBase.h"
 #include "../include/nw4r/lyt/lyt_arcResourceAccessor.h"
 #include "../include/nw4r/lyt/lyt_layout.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // Unused Treasure scene
 class CSceneMenuTreasure: public CSceneMenuBase {
@@ -24,13 +23,13 @@ class CSceneMenuTreasure: public CSceneMenuBase {
 
 	public:
 		CSceneMenuTreasure();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuTreasure();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuTreasure();
 };
 
 #endif // SCENE_MENU_TREASURE_H

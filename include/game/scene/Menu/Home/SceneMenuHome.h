@@ -2,8 +2,7 @@
 #define SCENE_MENU_HOME_H
 
 #include "../include/game/scene/Menu/SceneMenuBase.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 // Unused Home scene
 class CSceneMenuHome: public CSceneMenuBase {
@@ -12,13 +11,13 @@ class CSceneMenuHome: public CSceneMenuBase {
 
 	public:
 		CSceneMenuHome();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuHome();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuHome();
 };
 
 #endif // SCENE_MENU_HOME_H

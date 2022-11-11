@@ -1,8 +1,7 @@
 #ifndef MENU_ITEM_LIST_H
 #define MENU_ITEM_LIST_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CMenuItemList {
 	private:

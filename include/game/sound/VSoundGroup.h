@@ -2,8 +2,7 @@
 #define VSOUNDGROUP_H
 
 #include "../include/nw4r/snd/snd_SoundHandle.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVSoundGroup {
     public:

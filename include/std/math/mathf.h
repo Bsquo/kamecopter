@@ -1,8 +1,7 @@
 #ifndef STD_MATHF_H
 #define STD_MATHF_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 namespace std {
     f32 asin(f32);

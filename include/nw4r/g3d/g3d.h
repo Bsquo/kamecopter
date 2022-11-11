@@ -1,8 +1,7 @@
 #ifndef NW4R_G3D_H
 #define NW4R_G3D_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 namespace nw4r {
     namespace g3d {

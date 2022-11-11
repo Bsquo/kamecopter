@@ -3,8 +3,7 @@
 
 #include "../include/game/math/VAxis.h"
 #include "../include/game/math/VMatrix.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVAxis;     // Forward declaration
 
@@ -15,7 +14,7 @@ class CVAngle {
     public:
         CVAngle();
         CVAngle(f32, f32, f32);
-        void operator=(const CVAngle&);
+        const CVAngle& operator=(const CVAngle&);
         operator CVAxis() const;
 };
 

@@ -3,8 +3,7 @@
 
 #include "../include/game/scene/VScene.h"
 #include "../include/game/hbm/VHomeButton.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVApp {
     public:

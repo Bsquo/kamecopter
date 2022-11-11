@@ -35,8 +35,7 @@
 #include "../include/game/scene/Menu/Multi/SceneMenuMultiModeSelect.h"
 #include "../include/game/scene/Menu/ClassicCheak/SceneMenuClassicCheak.h"
 #include "../include/game/scene/Menu/ControllerManual/SceneMenuControllerManual.h"
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CApp: public CVApp {
     public:
@@ -79,6 +78,10 @@ class CApp: public CVApp {
         CSceneMenuClassicCheak mSceneMenuClassicCheak;
         CSceneMenuControllerManual mSceneMenuControllerManual;
 
+    protected:
+        CApp();
+
+    public:
         static CApp* GetInstance();
         bool StartLocal();
         bool StartLocal2();
@@ -86,11 +89,8 @@ class CApp: public CVApp {
         void EndLocal();
         bool SetSceneIndex(int);
         bool MenuSeenEndCheak();
-		CSceneGame* GetSceneGame();
+        CSceneGame* GetSceneGame();
         ~CApp();
-		
-	protected:
-        CApp();
 };
 
 #endif // APP_H

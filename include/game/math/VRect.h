@@ -1,8 +1,7 @@
 #ifndef VRECT_H
 #define VRECT_H
 
-#include "../k_stdlib/kamek.h"
-#include "../include/types.h"
+#include <kamek.h>
 
 class CVRect {
     private:
